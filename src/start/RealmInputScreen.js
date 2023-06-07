@@ -124,10 +124,10 @@ function getSuggestion(realmInputValue, maybeParsedInput): Suggestion {
   }
 
   if ('chat'.startsWith(normalizedValue)) {
-    return 'https://chat.zulip.org/';
+    return 'https://chat.palapalco.ir/';
   }
 
-  return `https://${normalizedValue}.zulipchat.com/`;
+  return `https://${normalizedValue}.palapalco.ir/`;
 }
 
 export default function RealmInputScreen(props: Props): Node {
