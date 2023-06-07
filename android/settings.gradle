@@ -1,4 +1,4 @@
-rootProject.name = 'ZulipMobile'
+rootProject.name = 'LiFAChat'
 
 apply from: '../node_modules/expo/scripts/autolinking.gradle'
 useExpoModules()
