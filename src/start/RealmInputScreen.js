@@ -20,7 +20,6 @@ import { getGlobalSettings } from '../directSelectors';
 import { useGlobalSelector } from '../react-redux';
 import { BRAND_COLOR } from '../styles/constants';
 import ZulipText from '../common/ZulipText';
-import WebLink from '../common/WebLink';
 
 type Props = $ReadOnly<{|
   navigation: AppNavigationProp<'realm-input'>,
@@ -267,20 +266,13 @@ export default function RealmInputScreen(props: Props): Node {
     >
       <ZulipTextIntl
         text={{
-          text: 'Enter your Zulip server URL: <z-link>(What’s this?)</z-link>',
-          values: {
-            'z-link': chunks => (
-              <WebLink url={new URL('https://zulip.com/help/logging-in#find-the-zulip-log-in-url')}>
-                {chunks}
-              </WebLink>
-            ),
-          },
+          text: 'Enter your server URL:',
         }}
       />
       <View style={styles.inputWrapper}>
         <TextInput
           value={realmInputValue}
-          placeholder="your-org.zulipchat.com"
+          placeholder="your-org.palapalco.ir"
           placeholderTextColor={HALF_COLOR}
           style={styles.input}
           autoFocus
