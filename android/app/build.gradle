@@ -147,8 +147,8 @@ android {
         applicationId "pro.lifa.chat"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 208
-        versionName "27.208"
+        versionCode 1
+        versionName "0.1.1"
     }
     signingConfigs {
         // The RN v0.60 template app suggests configuring a debug
