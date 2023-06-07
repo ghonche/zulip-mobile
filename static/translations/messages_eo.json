@@ -126,7 +126,7 @@
   "No unread messages": "No unread messages",
   "Pick account": "Pick account",
   "Welcome": "Bonvenon",
-  "Enter your Zulip server URL: <z-link>(What’s this?)</z-link>": "Enter your Zulip server URL: <z-link>(What’s this?)</z-link>",
+  "Enter your server URL:": "Enter your server URL:",
   "Suggestion: <z-link>{suggestedServerUrl}</z-link>": "Suggestion: <z-link>{suggestedServerUrl}</z-link>",
   "Search": "Search",
   "Log in": "Ensaluti",

@@ -126,7 +126,7 @@
   "No unread messages": "Pas de messages non lus",
   "Pick account": "Choisissez un compte",
   "Welcome": "Bienvenue",
-  "Enter your Zulip server URL: <z-link>(What’s this?)</z-link>": "Saisir l'URL de votre serveur Zulip : <z-link>(Qu'est-ce que c'est ?)</z-link>",
+  "Enter your server URL:": "Saisir l'URL de votre serveur Zulip : <z-link>(Qu'est-ce que c'est ?)</z-link>",
   "Suggestion: <z-link>{suggestedServerUrl}</z-link>": "Suggestion : <z-link>{suggestedServerUrl}</z-link>",
   "Search": "Recherche",
   "Log in": "Se connecter",
