@@ -19,13 +19,13 @@ export default class CompatibilityChecker extends PureComponent<Props, State> {
   };
 
   componentDidMount() {
-    api.checkCompatibility().then(res => {
-      if (res.status === 400) {
-        this.setState({
-          compatibilityCheckFail: true,
-        });
-      }
-    });
+    // api.checkCompatibility().then(res => {
+    //   if (res.status === 400) {
+    //     this.setState({
+    //       compatibilityCheckFail: true,
+    //     });
+    //   }
+    // });
   }
 
   render(): Node {
