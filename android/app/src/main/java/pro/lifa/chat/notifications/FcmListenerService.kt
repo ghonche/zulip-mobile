@@ -1,4 +1,4 @@
-package com.zulipmobile.notifications
+package pro.lifa.chat.notifications
 
 import com.facebook.react.ReactApplication
 import com.google.firebase.messaging.FirebaseMessagingService

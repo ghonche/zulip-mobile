@@ -1,6 +1,6 @@
 @file:JvmName("SharingHelper")
 
-package com.zulipmobile.sharing
+package pro.lifa.chat.sharing
 
 import android.content.ContentResolver
 import android.content.Intent
@@ -10,10 +10,10 @@ import android.util.Log
 import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.ReactContext
 import com.facebook.react.bridge.WritableMap
-import com.zulipmobile.ReactAppStatus
-import com.zulipmobile.ZLog
-import com.zulipmobile.appStatus
-import com.zulipmobile.emitEvent
+import pro.lifa.chat.ReactAppStatus
+import pro.lifa.chat.ZLog
+import pro.lifa.chat.appStatus
+import pro.lifa.chat.emitEvent
 
 @JvmField
 val TAG = "ShareToZulip"

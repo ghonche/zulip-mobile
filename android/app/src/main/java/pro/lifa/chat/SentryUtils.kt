@@ -1,4 +1,4 @@
-package com.zulipmobile
+package pro.lifa.chat
 
 import io.sentry.Sentry
 import io.sentry.SentryLevel

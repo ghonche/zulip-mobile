@@ -1,4 +1,4 @@
-package com.zulipmobile
+package pro.lifa.chat
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactApplication

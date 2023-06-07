@@ -1,4 +1,4 @@
-package com.zulipmobile
+package pro.lifa.chat
 
 import android.content.Intent
 import android.os.Build
@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.webkit.WebView
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
-import com.zulipmobile.notifications.maybeHandleViewNotif
-import com.zulipmobile.sharing.handleSend
+import pro.lifa.chat.notifications.maybeHandleViewNotif
+import pro.lifa.chat.sharing.handleSend
 import expo.modules.ReactActivityDelegateWrapper
 
 open class MainActivity : ReactActivity() {

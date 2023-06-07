@@ -1,4 +1,4 @@
-package com.zulipmobile;
+package pro.lifa.chat;
 
 import android.content.Intent;
 import android.content.pm.ResolveInfo;

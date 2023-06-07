@@ -1,4 +1,4 @@
-package com.zulipmobile;
+package pro.lifa.chat;
 
 import android.util.Base64;
 import com.facebook.react.bridge.Callback;

@@ -1,13 +1,16 @@
 @file:JvmName("NotifyReact")
 
-package com.zulipmobile.notifications
+package pro.lifa.chat.notifications
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.ReactContext
-import com.zulipmobile.*
+import pro.lifa.chat.*
+import pro.lifa.chat.ReactAppStatus
+import pro.lifa.chat.appStatus
+import pro.lifa.chat.emitEvent
 
 /**
  * Methods for telling React about a notification.

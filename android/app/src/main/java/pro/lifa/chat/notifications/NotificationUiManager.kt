@@ -1,6 +1,6 @@
 @file:JvmName("NotificationUiManager")
 
-package com.zulipmobile.notifications
+package pro.lifa.chat.notifications
 
 import android.app.Notification
 import android.app.NotificationManager
@@ -17,10 +17,10 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.core.app.Person
 import androidx.core.graphics.drawable.IconCompat
 import androidx.core.os.bundleOf
-import com.zulipmobile.BuildConfig
-import com.zulipmobile.MainActivity
-import com.zulipmobile.R
-import com.zulipmobile.ZLog
+import pro.lifa.chat.BuildConfig
+import pro.lifa.chat.MainActivity
+import pro.lifa.chat.R
+import pro.lifa.chat.ZLog
 import java.io.IOException
 import java.io.InputStream
 import java.net.URL

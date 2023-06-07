@@ -1,4 +1,4 @@
-package com.zulipmobile
+package pro.lifa.chat
 
 import android.util.Log
 import io.sentry.Sentry

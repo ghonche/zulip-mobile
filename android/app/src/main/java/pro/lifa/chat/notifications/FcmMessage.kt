@@ -1,4 +1,4 @@
-package com.zulipmobile.notifications
+package pro.lifa.chat.notifications
 
 import java.net.MalformedURLException
 import java.net.URL

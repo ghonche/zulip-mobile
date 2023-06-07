@@ -4,6 +4,13 @@ import com.google.common.truth.Expect
 import org.junit.Rule
 import org.junit.Test
 import org.junit.jupiter.api.assertThrows
+import pro.lifa.chat.notifications.FcmMessage
+import pro.lifa.chat.notifications.FcmMessageParseException
+import pro.lifa.chat.notifications.Identity
+import pro.lifa.chat.notifications.MessageFcmMessage
+import pro.lifa.chat.notifications.Recipient
+import pro.lifa.chat.notifications.RemoveFcmMessage
+import pro.lifa.chat.notifications.Sender
 import java.net.URL
 
 open class FcmMessageTestBase {
@@ -174,7 +181,8 @@ class MessageFcmMessageTest : FcmMessageTestBase() {
 
     @Test
     fun `optional fields missing cause no error`() {
-        expect.that(parse(Example.stream.minus("stream_id")).recipient).isEqualTo(Recipient.Stream(
+        expect.that(parse(Example.stream.minus("stream_id")).recipient).isEqualTo(
+            Recipient.Stream(
             streamId = null,
             streamName = Example.stream["stream"]!!,
             topic = Example.stream["topic"]!!

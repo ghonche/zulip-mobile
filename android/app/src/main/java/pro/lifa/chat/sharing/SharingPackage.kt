@@ -1,4 +1,4 @@
-package com.zulipmobile.sharing
+package pro.lifa.chat.sharing
 
 import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.NativeModule

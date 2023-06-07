@@ -1,4 +1,4 @@
-package com.zulipmobile;
+package pro.lifa.chat;
 
 import android.app.Application;
 import android.content.Context;
@@ -15,9 +15,11 @@ import expo.modules.ReactNativeHostWrapper;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
-import com.zulipmobile.notifications.NotificationChannelManager;
-import com.zulipmobile.notifications.NotificationsPackage;
-import com.zulipmobile.sharing.SharingPackage;
+import pro.lifa.chat.BuildConfig;
+
+import pro.lifa.chat.notifications.NotificationChannelManager;
+import pro.lifa.chat.notifications.NotificationsPackage;
+import pro.lifa.chat.sharing.SharingPackage;
 
 public class MainApplication extends Application implements ReactApplication {
     private final ReactNativeHost mReactNativeHost = new ReactNativeHostWrapper(
@@ -88,7 +90,7 @@ public class MainApplication extends Application implements ReactApplication {
                 We use reflection here to pick up the class that initializes Flipper,
                 since Flipper library is not available in release mode
                 */
-                Class<?> aClass = Class.forName("com.zulipmobile.ReactNativeFlipper");
+                Class<?> aClass = Class.forName("pro.lifa.chat.ReactNativeFlipper");
                 aClass
                         .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
                         .invoke(null, context, reactInstanceManager);
