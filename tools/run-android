@@ -18,7 +18,7 @@ cd "${ROOT_DIR}"
 run_visibly tools/gradle -q :app:installDebug "$@"
 
 devices=(
-    $(run_visibly adb devices | perl -0ne 'print "$_\n" for (/^(\S+) \s+ device$/gmx)')
+    $(run_visibly /Users/ghonche/SDK/platform-tools/adb devices | perl -0ne 'print "$_\n" for (/^(\S+) \s+ device$/gmx)')
 )
 
 if ! (( ${#devices[@]} )); then
@@ -27,12 +27,12 @@ if ! (( ${#devices[@]} )); then
 fi
 
 for device in "${devices[@]}"; do
-    run_visibly adb -s "${device}" reverse tcp:8081 tcp:8081
+    run_visibly /Users/ghonche/SDK/platform-tools/adb -s "${device}" reverse tcp:8081 tcp:8081
 
     # This is the part that `react-native run-android` doesn't have the
     # option to do correctly: even when you pass a --main-activity flag,
     # it appends that value to the app ID.  So it's impossible to specify
     # the correct activity when its name doesn't begin with the full app ID.
-    run_visibly adb -s "${device}" shell \
+    run_visibly /Users/ghonche/SDK/platform-tools/adb -s "${device}" shell \
         am start -n com.zulipmobile.debug/com.zulipmobile.MainActivity
 done
